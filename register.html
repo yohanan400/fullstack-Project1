@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מאגר שיעורים - הרשמה</title>
+</head>
+
+<body>
+
+    <h1>הרשמה</h1>
+
+    <section id="registry-form-section">
+        <form id="registry-form" action="register.html" method="post">
+
+            <label for="fname">שם פרטי:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">שם משפחה:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="mail">דוא"ל:</label>
+            <input type="text" id="mail" name="mail"><br><br>
+
+            <div id="gender">
+                <label for="male">
+                    <input type="radio" name="gender" id="male">
+                    זכר
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female">
+                    נקבה
+                </label>
+            </div>
+
+            <label for="topic">נושא מועדף:</label>
+            <select id="topic">
+                <option value="amuna">אמונה</option>
+                <option value="gmara-iun">גמרא - עיון</option>
+                <option value="gmara-bekiut">גמרא - בקיאות</option>
+                <option value="musar">מוסר</option>
+                <option value="hasidut">חסידות</option>
+                <option value="halaha">הלכה</option>
+            </select><br><br>
+
+
+            <input type="checkbox" id="terms">אני מסכים <a href="#"> לתנאי השימוש באתר</a><br>
+
+            <input type="submit" value="הרשם">
+            <input type="reset" value="נקה">
+        </form>
+    </section>
+</body>
+
+</html>
