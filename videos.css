@@ -1,0 +1,51 @@
+.LessonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin: 10px;
+    background-color: black;
+    flex: 50%;
+}
+
+.card {
+    text-align: center;
+    font-family: arial;
+    color: white;
+    margin: 5px;
+    position: relative;
+    flex-shrink: 2;
+}
+
+img {
+    max-height: 160px;
+    max-width: 300px;
+}
+
+iframe{
+    width: fit-content;
+    height: fit-content;
+}
+
+.subject {
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin: 24px 0;
+}
+
+a:hover {
+    color: blue;
+}
+
+section{
+    margin: 40px;
+}
+
+h2{
+    width: fit-content;
+}
