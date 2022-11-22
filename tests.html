@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <style>
+        /* Font */
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+        /* Design */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #ecf9ff;
+        }
+
+        body {
+            color: #272727;
+            font-family: 'Quicksand', serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0;
+            padding: 1rem;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .btn {
+            color: #ffffff;
+            padding: 0.8rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+        }
+
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards_item {
+            display: flex;
+            padding: 1rem;
+        }
+
+        @media (min-width: 40rem) {
+            .cards_item {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 56rem) {
+            .cards_item {
+                width: 33.3333%;
+            }
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card_content {
+            padding: 1rem;
+            background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+        }
+
+        .card_title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            margin: 0px;
+        }
+
+        .card_text {
+            color: #ffffff;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+        }
+
+        .made_by {
+            font-weight: 400;
+            font-size: 13px;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Responsive Card Grid Layout</h1>
+        <h2>שיעורים בנושא גמרא</h2>
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Zfd1l6j1F1A"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">בבא קמא דף ב</h2>
+                        <p class="card_text">הרב זמיר כהן</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://he.wikipedia.org/wiki/%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image"><iframe class="video" width="560" height="315"
+                            src="https://www.youtube.com/embed/sdS9PCFS7C0" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="card_content">
+                        <h2 class="card_title">קדימות בלימוד לגמרא או להלכה?</h2>
+                        <p class="card_text">הרב מרדכי אליהו</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/goAX7pHTMrE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">מסכת בבא מציעא דף ב עמוד א</h2>
+                        <p class="card_text">הרב דניאל ניו</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://ravinternet.org/category/rabanim/%D7%94%D7%A8%D7%91-%D7%93%D7%A0%D7%99%D7%90%D7%9C-%D7%A0%D7%99%D7%95/'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h2>שיעורים בנושא הלכה</h2>
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xEroaQOeWM0"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">בעל הלכה ברורה הלכות שבת</h2>
+                        <p class="card_text">הרב דוד יוסף</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%95%D7%A1%D7%A3_(%D7%A8%D7%91)'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/KQCyaVRDuIA"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">הלכות שבת דיני מוקצה</h2>
+                        <p class="card_text">הרב יורם סרי</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://kav.meorot.net/rabbis/%D7%94%D7%A8%D7%91-%D7%99%D7%95%D7%A8%D7%9D-%D7%A1%D7%A8%D7%99/'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/tLyzMUmi16Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">הלכות מעשר כספים</h2>
+                        <p class="card_text">הרב זמיר כהן</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://he.wikipedia.org/wiki/%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h2>שיעורים בנושא אמונה</h2>
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4GMxGkKSrJk"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">עשה לך רב</h2>
+                        <p class="card_text">הרב טל שאוליאן</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://www.srugim.co.il/tag/%D7%94%D7%A8%D7%91-%D7%98%D7%9C-%D7%A9%D7%90%D7%95%D7%9C%D7%99%D7%90%D7%9F'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/PyifzGgSJ1c"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">אמונה פשוטה</h2>
+                        <p class="card_text">הרב יגאל כהן</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://www.hamichlol.org.il/%D7%94%D7%A8%D7%91_%D7%99%D7%92%D7%90%D7%9C_%D7%9B%D7%94%D7%9F'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Y7xFPn77SSA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">אשרי המאמין</h2>
+                        <p class="card_text">הרב ערן טמיר</p>
+                        <button class="btn card_btn" type="button"
+                            onclick="location.href='https://he.wikipedia.org/wiki/%D7%A2%D7%A8%D7%9F_%D7%98%D7%9E%D7%99%D7%A8'">לחץ
+                            כאן למידע על
+                            הרב</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3 class="made_by">Made with ♡</h3>
+</body>
+
+</html>

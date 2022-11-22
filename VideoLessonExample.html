@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html html lang="he" dir="rtl">
+<html lang="he" dir="rtl">
 
-    <head>
-        <style>
+<head>
+    <style>
         .LessonContainer {
             display: flex;
+            flex-wrap: wrap;
             float: right;
             margin: 10px;
             background-color: black;
-            width: fit-content;
+            flex: 50%;
         }
 
         .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            height: 315px;
-            width: 50%;
             text-align: center;
             font-family: arial;
             color: white;
             margin: 5px;
+            position: relative;
+            flex-shrink: 2;
         }
 
         img {
-            height: 160px;
-            width: 300px;
+            max-height: 160px;
+            max-width: 300px;
+        }
+
+        iframe {
+            width: fit-content;
+            height: fit-content;
         }
 
         .subject {
             color: white;
             font-size: 18px;
         }
-
 
         a {
             text-decoration: none;
@@ -42,144 +46,141 @@
         a:hover {
             color: blue;
         }
-        section{
-            margin: 20px;
+
+        section {
+            margin: 40px;
         }
 
+        h2 {
+            width: fit-content;
+        }
     </style>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="videos.css">
 
-    <body>
+    <title>מאגר שיעורים - סרטונים</title>
+</head>
 
-        <section id="Gmara">
-            <h2>שיעורים בנושא גמרא</h2>
+<body>
+    <header>
+        <h1>מאגר סירטוני הוידאו</h1>
+        <p>בעמוד זה תוכלו לצפות בסרטונים מפי רבנים שונים במגוון נושאים.
+            הסרטונים ממוינים לפי נושאים, ניתן לקפוץ אל כל נושא באמצעות לחיצה
+            על הקישורים הבאים:
+        </p>
+        <navbar id="SideNav">
+            <a href="#Gmara"> גמרא</a>
+            <a href="#Halacha"> הלכה</a>
+            <a href="#Emoona"> אמונה</a>
+        </navbar>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/Zfd1l6j1F1A"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/%D7%94%D7%A8%D7%91_%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F_%D7%A9%D7%9C%D7%99%D7%98%22%D7%90.jpg"
-                        alt="הרב זמיר כהן">
-                    <h1>הרב זמיר כהן</h1>
-                    <p class="subject">בבא קמא דף ב</p>
-                    <a
-                        href="https://he.wikipedia.org/wiki/%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F">לחץ
-                        כאן למידע על
-                        הרב</a>
-                </div>
+        <navbar id="nav-bar">
+            <a href="#"> <input type="button" value="וידאו" /> </a>
+            <a href="#"> <input type="button" value="שמע" /> </a>
+            <a href="#"> <input type="button" value="סיכומים" /> </a>
+            <a href="register.html"> <input type="button" value="הרשמה" />
+            </a>
+        </navbar>
+    </header>
+
+    <section id="Gmara">
+        <h2>שיעורים בנושא גמרא</h2>
+
+        <div class="LessonContainer">
+            <iframe src="https://www.youtube.com/embed/Zfd1l6j1F1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/%D7%94%D7%A8%D7%91_%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F_%D7%A9%D7%9C%D7%99%D7%98%22%D7%90.jpg"
+                    alt="הרב זמיר כהן">
+                <h1>הרב זמיר כהן</h1>
+                <p class="subject">בבא קמא דף ב</p>
+                <a href="https://he.wikipedia.org/wiki/%D7%96%D7%9E%D7%99%D7%A8_%D7%9B%D7%94%D7%9F">לחץ
+                    כאן למידע על
+                    הרב</a>
             </div>
+        </div>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/sdS9PCFS7C0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Mordechai_eliyahu.jpg"
-                        alt="הרב מרדכי אליהו">
-                    <h1>הרב מרדכי אליהו</h1>
-                    <p class="subject">קדימות בלימוד לגמרא או להלכה?</p>
-                    <a
-                        href="https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95">לחץ
-                        כאן למידע על הרב</a>
-                </div>
+        <div class="LessonContainer">
+            <iframe src="https://www.youtube.com/embed/sdS9PCFS7C0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Mordechai_eliyahu.jpg"
+                    alt="הרב מרדכי אליהו">
+                <h1>הרב מרדכי אליהו</h1>
+                <p class="subject">קדימות בלימוד לגמרא או להלכה?</p>
+                <a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95">לחץ
+                    כאן למידע על הרב</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="Halacha">
-            <h2>שיעורים בנושא הלכה</h2>
+    <section id="Halacha">
+        <h2>שיעורים בנושא הלכה</h2>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/xEroaQOeWM0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Rabbi_David_Yosef.jpeg"
-                        alt="הרב דוד יוסף">
-                    <h1>הרב דוד יוסף</h1>
-                    <p class="subject">בעל הלכה ברורה הלכות שבת</p>
-                    <a
-                        href="https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%95%D7%A1%D7%A3_(%D7%A8%D7%91)">לחץ
-                        כאן למידע על הרב</a>
-                </div>
+        <div class="LessonContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xEroaQOeWM0"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Rabbi_David_Yosef.jpeg"
+                    alt="הרב דוד יוסף">
+                <h1>הרב דוד יוסף</h1>
+                <p class="subject">בעל הלכה ברורה הלכות שבת</p>
+                <a href="https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%95%D7%A1%D7%A3_(%D7%A8%D7%91)">לחץ
+                    כאן למידע על הרב</a>
             </div>
+        </div>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/KQCyaVRDuIA"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://kav.meorot.net/wp-content/uploads/elementor/thumbs/%D7%94%D7%A8%D7%91-%D7%99%D7%95%D7%A8%D7%9D-%D7%A1%D7%A8%D7%99-pkav56rgly12vtj12p69w05fxbckp4rrzlju8ewk78.jpg"
-                        alt="הרב יורם סרי">
-                    <h1>הרב יורם סרי</h1>
-                    <p class="subject">הלכות שבת דיני מוקצה</p>
-                    <a
-                        href="https://kav.meorot.net/rabbis/%D7%94%D7%A8%D7%91-%D7%99%D7%95%D7%A8%D7%9D-%D7%A1%D7%A8%D7%99/">לחץ
-                        כאן למידע על הרב</a>
-                </div>
+        <div class="LessonContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KQCyaVRDuIA"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://kav.meorot.net/wp-content/uploads/elementor/thumbs/%D7%94%D7%A8%D7%91-%D7%99%D7%95%D7%A8%D7%9D-%D7%A1%D7%A8%D7%99-pkav56rgly12vtj12p69w05fxbckp4rrzlju8ewk78.jpg"
+                    alt="הרב יורם סרי">
+                <h1>הרב יורם סרי</h1>
+                <p class="subject">הלכות שבת דיני מוקצה</p>
+                <a href="https://kav.meorot.net/rabbis/%D7%94%D7%A8%D7%91-%D7%99%D7%95%D7%A8%D7%9D-%D7%A1%D7%A8%D7%99/">לחץ
+                    כאן למידע על הרב</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="Emoona">
-            <h2>שיעורים בנושא אמונה</h2>
+    <section id="Emoona">
+        <h2>שיעורים בנושא אמונה</h2>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/4GMxGkKSrJk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://www.srugim.co.il/i/wp-content/uploads/2018/07/1-140__w645h390q80.jpg"
-                        alt="הרב טל שאוליאן">
-                    <h1>הרב טל שאוליאן</h1>
-                    <p class="subject">עשה לך רב</p>
-                    <a
-                        href="https://www.srugim.co.il/tag/%D7%94%D7%A8%D7%91-%D7%98%D7%9C-%D7%A9%D7%90%D7%95%D7%9C%D7%99%D7%90%D7%9F">לחץ
-                        כאן למידע על הרב</a>
-                </div>
+        <div class="LessonContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4GMxGkKSrJk"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://www.srugim.co.il/i/wp-content/uploads/2018/07/1-140__w645h390q80.jpg"
+                    alt="הרב טל שאוליאן">
+                <h1>הרב טל שאוליאן</h1>
+                <p class="subject">עשה לך רב</p>
+                <a
+                    href="https://www.srugim.co.il/tag/%D7%94%D7%A8%D7%91-%D7%98%D7%9C-%D7%A9%D7%90%D7%95%D7%9C%D7%99%D7%90%D7%9F">לחץ
+                    כאן למידע על הרב</a>
             </div>
+        </div>
 
-            <div class="LessonContainer">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/PyifzGgSJ1c"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card">
-                    <img
-                        src="https://www.hamichlol.org.il/w/upload/michlol/4/4f/%D7%94%D7%A8%D7%91_%D7%99%D7%92%D7%90%D7%9C_%D7%9B%D7%94%D7%9F.jpg"
-                        alt="הרב יגאל כהן">
-                    <h1>הרב יגאל כהן</h1>
-                    <p class="subject">אמונה פשוטה</p>
-                    <a
-                        href="https://www.hamichlol.org.il/%D7%94%D7%A8%D7%91_%D7%99%D7%92%D7%90%D7%9C_%D7%9B%D7%94%D7%9F">לחץ
-                        כאן למידע על הרב</a>
-                </div>
+        <div class="LessonContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PyifzGgSJ1c"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card">
+                <img src="https://www.hamichlol.org.il/w/upload/michlol/4/4f/%D7%94%D7%A8%D7%91_%D7%99%D7%92%D7%90%D7%9C_%D7%9B%D7%94%D7%9F.jpg"
+                    alt="הרב יגאל כהן">
+                <h1>הרב יגאל כהן</h1>
+                <p class="subject">אמונה פשוטה</p>
+                <a href="https://www.hamichlol.org.il/%D7%94%D7%A8%D7%91_%D7%99%D7%92%D7%90%D7%9C_%D7%9B%D7%94%D7%9F">לחץ
+                    כאן למידע על הרב</a>
             </div>
+        </div>
 
-        </section>
+    </section>
 
 
-    </body>
-
-</html>
+</body>
