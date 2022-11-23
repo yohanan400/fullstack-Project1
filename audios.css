@@ -36,6 +36,7 @@ img {
     max-width: 100%;
     vertical-align: middle;
     aspect-ratio: 1 / 1;
+    border-radius: 5%;
 }
 
 audio {
@@ -95,11 +96,12 @@ audio {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    border-radius: 5%;
 }
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
 
 .card_title {
@@ -118,7 +120,6 @@ audio {
     margin-bottom: 1.25rem;
     font-weight: 400;
 }
-
 
 
 .navbar {
