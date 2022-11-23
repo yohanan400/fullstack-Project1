@@ -20,6 +20,34 @@ body {
     letter-spacing: 0;
 }
 
+/*logo*/
+#logo img {
+    max-width: 100%;
+    vertical-align: middle;
+    max-height: 53px !important;
+}
+
+#logo {
+    float: left;
+}
+
+#logo_link {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    #links {
+        display: grid;
+    }
+
+    #logo img {
+        visibility: hidden;
+    }
+}
+
+/* end of logo*/
+
 .main {
     max-width: 1200px;
     margin: 0 auto;
@@ -116,6 +144,7 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
+
 }
 
 .navbar a {
@@ -133,27 +162,29 @@ h1 {
     color: black;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #000;
     font-size: xx-large;
-    margin-left: 10px;
-  }
+}
 
-  a:hover{
+#SideNav {
+    margin: 40%;
+}
+
+#SideNav a:hover,
+#SideNav a:visited:hover {
     color: #67a0d9;
-  }
+}
 
-  #SideNav ul{
-    position: relative;
-    margin-right: 10px;
-  }
+.seperate_symbol {
+    color: deepskyblue;
+}
 
-  #sidenav a{
-    padding:0px;
-    margin: 0px;
-  }
+#SideNav a,
+#SideNav a:visited {
+    color: rgb(4, 201, 201);
+}
 
-  #page_text{
-    font-size: 25px;
-  }
+#page_text {
+    font-size: 35px;
+}
