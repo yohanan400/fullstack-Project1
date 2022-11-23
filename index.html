@@ -5,38 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tamplate.css">
 
     <title>מאגר שיעורים - דף הבית</title>
 </head>
 
 <body>
     <header>
-        <header>
-            <navbar class="navbar" id="nav-bar">
+        <navbar class="navbar" id="nav-bar">
+            <div id="links">
+                <a href="index.html">דף הבית</a>
                 <a href="./videos.html">וידאו</a>
                 <a href="./audios.html">שמע</a>
                 <a href="./Summaries.html">סיכומים</a>
                 <a href="register.html">הרשמה</a>
-            </navbar>
-            <br><br>
+            </div>
+            <section id="logo">
+                <a href="index.html" id="logo_link">
+                    <img src="./resources/images/logo.webp" alt="דף הבית" />
+                </a>
+            </section>
+        </navbar>
 
+        <br><br>
+        <section id="page_text">
             <h1>ברוכים הבאים למאגר השיעורים</h1>
             <p>מאגר שיעורים זה מכיל שיעורים לצפייה,
                 לשמיעה וסיכומי שיעורים מפי רבנים שונים
                 <br>
             <h3>מקווים שתהנו</h3>
             </p>
-        </header>
+        </section>
+    </header>
 
-        <footer>
+    <footer>
+        <section id="contact_info">
             <p><u>צור קשר</u></p>
             <p>טלפון: <a href="tel:123-456-7890">051-234-5678</a></p>
             <p>מייל: <a href="mailto: abc@example.com">mySite@mySite.org</a> </p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.199396553819!2d35.19330838502662!3d31.765047081289314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7bf0a786ee5%3A0x8a4bb3db69092450!2z15TXnteo15vXliDXlNeQ16fXk9ee15kg15zXkSAo157Xm9eV158g15zXkSk!5e0!3m2!1siw!2sil!4v1668458551697!5m2!1siw!2sil"
-                width="200" height="200" style="border:0;"></iframe>
-        </footer>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.199396553819!2d35.19330838502662!3d31.765047081289314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7bf0a786ee5%3A0x8a4bb3db69092450!2z15TXnteo15vXliDXlNeQ16fXk9ee15kg15zXkSAo157Xm9eV158g15zXkSk!5e0!3m2!1siw!2sil!4v1668458551697!5m2!1siw!2sil"
+            width="200" height="200" style="border:0;"></iframe>
+    </footer>
 </body>
 
 </html>
