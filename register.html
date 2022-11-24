@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./register.css">
     <link rel="stylesheet" href="tamplate.css">
+    <link rel="stylesheet" href="./register.css">
     <title>מאגר שיעורים - הרשמה</title>
 </head>
 
@@ -18,8 +18,8 @@
                 <a href="index.html">דף הבית</a>
                 <a href="./videos.html">וידאו</a>
                 <a href="./audios.html">שמע</a>
-                <a href="#">סיכומים</a>
-                <a href="register.html">הרשמה</a>
+                <!---<a href="./Summaries.html">סיכומים</a>--->
+                <a class="active" href="register.html">הרשמה</a>
             </div>
             <section id="logo">
                 <a href="index.html" id="logo_link">
@@ -27,52 +27,80 @@
                 </a>
             </section>
         </navbar>
-        <br><br>
     </header>
 
-
-    <h1>הרשמה</h1>
-
-    <section id="registry-form-section">
-        <form id="registry-form" action="register.html" method="post">
-
-            <label for="fname">שם פרטי:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-
-            <label for="lname">שם משפחה:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-
-            <label for="mail">דוא"ל:</label>
-            <input type="text" id="mail" name="mail"><br><br>
-
-            <div id="gender">
-                <label for="male">
-                    <input type="radio" name="gender" id="male">
-                    זכר
-                </label>
-                <label for="female">
-                    <input type="radio" name="gender" id="female">
-                    נקבה
-                </label>
+    <br><br><br>
+    <div class="form_display">
+      <div class="container">
+        <div class="title">הרשמה לאתר</div>
+        <div class="content">
+          <form action="#" method="post">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">שם מלא</span>
+                <input type="text" placeholder="הכנס שם ושם משפחה" required>
+              </div>
+              <div class="input-box">
+                <span class="details">שם משתמש</span>
+                <input type="text" placeholder="הכנס שם משתמש" required>
+              </div>
+              <div class="input-box">
+                <span class="details">אימייל</span>
+                <input type="text" placeholder="israel@israely.com" required>
+              </div>
+              <div class="input-box">
+                <span class="details">מספר נייד</span>
+                <input type="text" placeholder="05x-xxxxxxx" required>
+              </div>
+              <div class="input-box">
+                <span class="details">סיסמה</span>
+                <input type="text" placeholder="הכנס סיסמה" required>
+              </div>
+              <div class="input-box">
+                <span class="details">אמת סיסמה</span>
+                <input type="text" placeholder="חזור על אותה הסיסמה" required>
+              </div>
             </div>
-
-            <label for="topic">נושא מועדף:</label>
-            <select id="topic">
-                <option value="amuna">אמונה</option>
-                <option value="gmara-iun">גמרא - עיון</option>
-                <option value="gmara-bekiut">גמרא - בקיאות</option>
-                <option value="musar">מוסר</option>
-                <option value="hasidut">חסידות</option>
-                <option value="halaha">הלכה</option>
-            </select><br><br>
-
-
-            <input type="checkbox" id="terms">אני מסכים <a id="a-terms" href="#"> לתנאי השימוש באתר</a><br>
-
-            <input type="submit" value="הרשם">
-            <input type="reset" value="נקה">
-        </form>
-    </section>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <span class="gender-title">מגדר</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">זכר</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">נקבה</span>
+              </label>
+              </div>
+            </div>
+            <div class="subject_detail">
+              <label for="topic">נושא מועדף</label>
+              <select id="topic">
+                  <option value="amuna">אמונה</option>
+                  <option value="gmara-iun">גמרא - עיון</option>
+                  <option value="gmara-bekiut">גמרא - בקיאות</option>
+                  <option value="musar">מוסר</option>
+                  <option value="hasidut">חסידות</option>
+                  <option value="halaha">הלכה</option>
+              </select>
+            </div>
+            <br>
+            <div class="terms">
+              <input type="checkbox" id="terms">אני מסכים <a id="a-terms" href="#"> לתנאי השימוש באתר</a>
+            </div>
+            <div class="button">
+              <input type="submit" value="הרשם">
+            </div>
+            <div class="button">
+              <input type="reset" value="נקה">
+            </div>
+          </form>
+        </div>
+      </div>  
+    </div>
 </body>
 
 </html>

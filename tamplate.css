@@ -9,7 +9,7 @@
 }
 
 html {
-    background-color: #ecf9ff;
+    background-color: #def0f9;    
 }
 
 body {
@@ -36,15 +36,6 @@ body {
     padding: 0;
 }
 
-@media (max-width: 500px) {
-    #links {
-        display: grid;
-    }
-
-    #logo img {
-        visibility: hidden;
-    }
-}
 
 /* end of logo*/
 
@@ -61,7 +52,7 @@ h1 {
 
 
 .btn {
-    color: #ffffff;
+    color: #000000;
     padding: 0.8rem;
     font-size: 14px;
     text-transform: uppercase;
@@ -107,6 +98,62 @@ h1 {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+    /*#logo img {
+        visibility: hidden;
+    }*/ /* Disabling this for now as we don't have enough tabs for it to be relevant*/
+  }
+
+.navbar {
+    overflow: auto;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+
+#SideNav {
+    margin: 40%;
+}
+
+#SideNav a:hover,
+#SideNav a:visited:hover {
+    color: #34506d;
+}
+
+.seperate_symbol {
+    color: rgb(8, 124, 0);
+}
+
+#SideNav a,
+#SideNav a:visited {
+    color: rgb(0, 133, 133);
+    text-decoration: none;
+    font-size: xx-large;
+}
+
 .card {
     background-color: white;
     border-radius: 5%;
@@ -118,11 +165,11 @@ h1 {
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);;
 }
 
 .card_title {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -131,60 +178,26 @@ h1 {
 }
 
 .card_text {
-    color: #ffffff;
+    color: #000000;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
     font-weight: 400;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-}
-
-.navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navbar a:hover {
-    background: #ddd;
-    color: black;
-}
-
-a {
-    text-decoration: none;
-    font-size: xx-large;
-}
-
-#SideNav {
-    margin: 40%;
-}
-
-#SideNav a:hover,
-#SideNav a:visited:hover {
-    color: #67a0d9;
-}
-
-.seperate_symbol {
-    color: deepskyblue;
-}
-
-#SideNav a,
-#SideNav a:visited {
-    color: rgb(4, 201, 201);
-}
-
 #page_text {
     font-size: 35px;
+    text-align: center;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }

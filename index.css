@@ -22,4 +22,6 @@ a {
 footer iframe{
   position: fixed;
   left:0;
+  padding: 0 0 0 30px;
 }
+

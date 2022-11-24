@@ -6,87 +6,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="audios.css"> <!--- Change later --->
+    <link rel="stylesheet" href="summaries.css">
     <link rel="stylesheet" href="tamplate.css">
 
-    <title>מאגר סיכומים</title>
+    <title>מאגר שיעורים - סיכומים</title>
 </head>
 
 <body>
     <header>
-        <div class="main">
-            <h1>Responsive Card Grid Layout</h1>
-            <ul class="cards">
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <embed class="pdf_display" src="./resources/docs/בבא קמא פרק ראשון- הרב דרור - 1.pdf"/>
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image">
-                            <embed src="./resources/docs/בבא קמא פרק ראשון- הרב דרור - 1.docx" width="800px" height="2100px" />
-                        </div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div class="card">
-                        <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-                        <div class="card_content">
-                            <h2 class="card_title">Card Grid Layout</h2>
-                            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                            <button class="btn card_btn">Read More</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <h3 class="made_by">Made with ♡</h3>
-
+        <navbar class="navbar" id="nav-bar">
+            <div id="links">
+                <a href="index.html">דף הבית</a>
+                <a href="./videos.html">וידאו</a>
+                <a href="./audios.html">שמע</a>
+                <a href="./Summaries.html">סיכומים</a>
+                <a href="register.html">הרשמה</a>
+            </div>
+            <section id="logo">
+                <a href="index.html" id="logo_link">
+                    <img src="./resources/images/logo.webp" alt="דף הבית" />
+                </a>
+            </section>
+        </navbar>
+        <br><br>
+        <section id="page_text">
+            <h1>מאגר סיכומים</h1>
+            <p>בעמוד זה תוכלו לקרוא ולהוריד סיכומים שנכתבו לאורך השנים.<br></p>
+        </section>
     </header>
+    <embed src="./resources/docs/">
 </body>
 
 </html>
