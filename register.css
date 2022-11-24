@@ -19,6 +19,7 @@
   font-size: 25px;
   font-weight: 500;
   position: relative;
+  width: fit-content;
 }
 
 .container .title::before {
@@ -27,7 +28,7 @@
   right: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  width: 100%;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
@@ -56,10 +57,9 @@ form .input-box span.details {
   outline: none;
   font-size: 16px;
   border-radius: 5px;
-  padding-left: 15px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .user-details .input-box input:focus,
@@ -74,9 +74,8 @@ form .gender-details .gender-title {
 
 form .category {
   display: flex;
-  width: 80%;
   margin: 14px 0;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
 
 form .category label {
@@ -85,24 +84,15 @@ form .category label {
   cursor: pointer;
 }
 
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
 form .category label .dot {
   height: 18px;
   width: 18px;
   border-radius: 50%;
+  margin-left: 5px;
   margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #dot-1:checked~.category label .one,
@@ -113,6 +103,24 @@ form .category label .dot {
 
 form input[type="radio"] {
   display: none;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+select{
+  margin-top: 10px;
+}
+
+.terms #terms{
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 form .button {
@@ -130,8 +138,12 @@ form .button input {
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.3s ease;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.subject_title{
+  font-size: 20px;
+  font-weight: 500;
 }
 
 form .button input:hover {
@@ -151,11 +163,6 @@ form .button input:hover {
 
   form .category {
     width: 100%;
-  }
-
-  .content form .user-details {
-    max-height: 300px;
-    overflow-y: scroll;
   }
 
   .user-details::-webkit-scrollbar {
