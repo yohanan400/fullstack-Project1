@@ -11,7 +11,7 @@
 }
 
 html {
-    background-color: #def0f9;    
+    background-color: #def0f9;
 }
 
 body {
@@ -103,13 +103,15 @@ h1 {
 
 @media screen and (max-width: 500px) {
     .navbar a {
-      float: none;
-      display: block;
+        float: none;
+        display: block;
     }
+
     /*#logo img {
         visibility: hidden;
-    }*/ /* Disabling this for now as we don't have enough tabs for it to be relevant*/
-  }
+    }*/
+    /* Disabling this for now as we don't have enough tabs for it to be relevant*/
+}
 
 .navbar {
     overflow: auto;
@@ -135,10 +137,12 @@ h1 {
 
 .active {
     background-color: #04AA6D;
-  }
+}
 
 #SideNav {
-    margin: 40%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 #SideNav a:hover,
@@ -168,7 +172,8 @@ h1 {
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    ;
 }
 
 .card_title {
@@ -199,6 +204,7 @@ h1 {
     align-items: center;
     overflow: hidden
 }
+
 .fill img {
     flex-shrink: 0;
     min-width: 100%;
